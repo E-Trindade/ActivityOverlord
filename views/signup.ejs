@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Activity Overlord</title>
+</head>
+
+<body ng-app="SignupModule" ng-controller="SignupController" ng-cloak>
+	<md-toolbar md-scroll-shrink>
+		<div class="md-toolbar-tools">
+			<h1>Signup Form</h1>
+		</div>
+	</md-toolbar>
+	<md-content>
+		<div layout="column" layout-align="center center" layout-padding>
+			<form name="userForm">
+
+
+				<div layout="row">
+					<md-input-container class="md-block" flex-gt-sm>
+						<label>First Name</label>
+						<input type=text ng-model="user.firstName">
+					</md-input-container>
+					<md-input-container class="md-block" flex-gt-sm>
+						<label>Last Name</label>
+						<input type=text ng-model="user.lastName">
+					</md-input-container>
+				</div>
+				<md-input-container class="md-block" flex-gt-sm>
+					<label>Email</label>
+					<input type=text ng-model="user.email">
+				</md-input-container>
+
+				<md-input-container class="md-block" flex-gt-sm>
+					<label>Choose a Password</label>
+					<input type=password ng-model="user.password">
+				</md-input-container>
+
+				<md-input-container class="md-block" flex-gt-sm>
+					<label>Re-enter your password</label>
+					<input type=password>
+				</md-input-container>
+
+			</form>
+			<md-button class="md-raised md-primary md-button" md-ink-ripple>
+				Create Account
+			</md-button>
+		</div>
+	</md-content>
+
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+	<!--STYLES-->
+	<link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/styles/fab-aw-icon.css">
+	<link rel="stylesheet" href="/styles/importer.css">
+	<!--STYLES END-->
+	<!--SCRIPTS-->
+	<script src="/js/dependencies/sails.io.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-animate/angular-animate.js"></script>
+	<script src="/bower_components/angular-aria/angular-aria.js"></script>
+	<script src="/bower_components/angular-messages/angular-messages.js"></script>
+	<script src="/bower_components/angular-material/angular-material.js"></script>
+	<script src="/js/public/signup/_SignupModule.js"></script>
+	<script src="/js/public/signup/controllers/SignupController.js"></script>
+	<!--SCRIPTS END-->
+</body>
+
+</html>
