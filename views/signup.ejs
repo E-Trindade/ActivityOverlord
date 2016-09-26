@@ -14,22 +14,20 @@
 	</md-toolbar>
 	<md-content>
 		<div layout="column" layout-align="center center" layout-padding>
-			<form name="userForm">
-
-
+			<form name="userForm" novalidate>
 				<div layout="row">
 					<md-input-container class="md-block" flex-gt-sm>
 						<label>First Name</label>
-						<input type=text ng-model="user.firstName">
+						<input type=text ng-model="user.firstName" required>
 					</md-input-container>
 					<md-input-container class="md-block" flex-gt-sm>
 						<label>Last Name</label>
-						<input type=text ng-model="user.lastName">
+						<input type=text ng-model="user.lastName" required>
 					</md-input-container>
 				</div>
 				<md-input-container class="md-block" flex-gt-sm>
 					<label>Email</label>
-					<input type=text ng-model="user.email">
+					<input type=email ng-model="user.email">
 				</md-input-container>
 
 				<md-input-container class="md-block" flex-gt-sm>
@@ -39,7 +37,7 @@
 
 				<md-input-container class="md-block" flex-gt-sm>
 					<label>Re-enter your password</label>
-					<input type=password>
+					<input type=password ng-model="user.confirmPassword" ng-model-options="{ updateOn: 'blur' } " ng-blur="checkPasswordMatch()">
 				</md-input-container>
 
 			</form>
