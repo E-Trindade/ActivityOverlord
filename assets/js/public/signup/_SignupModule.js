@@ -1,4 +1,4 @@
-angular.module('SignupModule', ['ngMaterial'])
+angular.module('SignupModule', ['ngMaterial', 'common.directives'])
 //
 //.config(function ($stateProvider, $urlRouterProvider) {
 //	$stateProvider
