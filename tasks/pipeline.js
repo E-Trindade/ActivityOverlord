@@ -34,10 +34,13 @@ var jsFilesToInject = [
 	'bower_components/angular-aria/angular-aria.js',
 	'bower_components/angular-messages/angular-messages.js',
 	'bower_components/angular-material/angular-material.js',
+	'bower_components/angular-ui-router/release/angular-ui-router.js',
 
 	// All of the rest of your client-side js files
 	// will be injected here in no particular order.
-	'js/**/*.js'
+	'js/**/*.js',
+	
+	'js/app.js',
 ];
 
 // Client-side HTML templates are injected using the sources below

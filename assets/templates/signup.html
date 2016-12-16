@@ -56,8 +56,14 @@
 				</md-input-container>
 
 			</form>
-			<md-button class="md-raised md-primary md-button" ng-disabled="userForm.$error.$invalid" ng-click="createAccount()">
-				Create Account
+
+			<md-button class="md-raised md-primary md-button" ng-disabled="userForm.$error.$invalid" ng-click="submitSignupForm()">
+				<label ng-hide="loading">Create Account</label>
+				<div layout="row" layout-align="space-around" ng-show="loading">
+					<md-progress-circular md-mode="indeterminate" class="md-hue-3" md-diameter="30em"></md-progress-circular>
+					<label>&nbsp;</label>
+					<label>Creating account...</label>
+				</div>
 			</md-button>
 		</div>
 	</md-content>
@@ -77,9 +83,11 @@
 	<script src="/bower_components/angular-aria/angular-aria.js"></script>
 	<script src="/bower_components/angular-messages/angular-messages.js"></script>
 	<script src="/bower_components/angular-material/angular-material.js"></script>
+	<script src="/js/app.js"></script>
 	<script src="/js/directives/pw-check.js"></script>
-	<script src="/js/public/signup/_SignupModule.js"></script>
-	<script src="/js/public/signup/controllers/SignupController.js"></script>
+	<script src="/js/modules/login/_LoginModule.js"></script>
+	<script src="/js/modules/signup/_SignupModule.js"></script>
+	<script src="/js/modules/signup/controllers/SignupController.js"></script>
 	<!--SCRIPTS END-->
 </body>
 
