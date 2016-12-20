@@ -1,0 +1,1 @@
+angular.module('login-module', ['ngMaterial', 'ui.router'])

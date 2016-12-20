@@ -38,9 +38,11 @@ var jsFilesToInject = [
 
 	// All of the rest of your client-side js files
 	// will be injected here in no particular order.
-	'js/**/*.js',
+	'js/dependencies/**/*.js',
+	'js/modules/**/*.js',
 	
 	'js/app.js',
+	'js/app.routes.js',
 ];
 
 // Client-side HTML templates are injected using the sources below

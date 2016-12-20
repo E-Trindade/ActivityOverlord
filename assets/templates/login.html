@@ -1,9 +1,15 @@
+<md-toolbar md-scroll-shrink>
+	<div class="md-toolbar-tools">
+		<h1>Activity Overlord - Login</h1>
+	</div>
+</md-toolbar>
+
 <md-content layout='column' layout-align="center center" layout-padding>
-	<div layout='column' flex=33 md-whiteframe=1>
+	<div layout='column' md-whiteframe=1>
 
 		<md-input-container>
-			<label>Username</label>
-			<input type="text" name="username" ng-model='user.username'>
+			<label>Email</label>
+			<input type="text" name="email" ng-model='user.email'>
 		</md-input-container>
 
 		<md-input-container>
@@ -12,7 +18,7 @@
 		</md-input-container>
 
 		<div layout="row">
-			<md-button class='md-raised md-primary'>Login</md-button>
+			<md-button class='md-raised md-primary' ng-click='login()'>Login</md-button>
 			<md-button class='md-raised md-accent' ui-sref='signup'>Signup</md-button>
 		</div>
 		
