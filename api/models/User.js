@@ -21,6 +21,11 @@ module.exports = {
 		  type: 'string',
 		  required: true
 	  },
+	  
+	  posts: {
+		  collection: 'publication',
+		  via: 'author'
+	  }
   }
 };
 

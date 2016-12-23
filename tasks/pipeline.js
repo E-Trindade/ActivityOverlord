@@ -35,6 +35,8 @@ var jsFilesToInject = [
 	'bower_components/angular-messages/angular-messages.js',
 	'bower_components/angular-material/angular-material.js',
 	'bower_components/angular-ui-router/release/angular-ui-router.js',
+	'bower_components/restangular/dist/restangular.js',
+	'bower_components/lodash/dist/lodash.js',
 
 	// All of the rest of your client-side js files
 	// will be injected here in no particular order.

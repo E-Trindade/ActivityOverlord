@@ -7,7 +7,7 @@
 
 module.exports = {
 	login: (req, res) => {
-		Users.findOne({
+		User.findOne({
 			email: req.param('email'),
 			password: req.param('password')
 		}).exec((err, user) => {

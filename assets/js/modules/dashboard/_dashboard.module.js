@@ -1,1 +1,1 @@
-angular.module('dashboard-module', ['ui.router'])
+angular.module('dashboard-module', ['ui.router', 'restangular'])

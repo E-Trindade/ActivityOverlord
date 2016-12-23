@@ -1,10 +1,13 @@
 angular.module('dashboard-module')
 
-.service('userService', ['$http', '$q',
-	function ($http, $q) {
+.service('userService', ['Restangular', '$q',
+	function (Restangular, $q) {
 		return {
 			listUsers: function(){
-				return $http.get('/users')
+				return Restangular.all('users').getList();
+			},
+			getUser: function(user_id){
+				return Restangular.one('users', user_id)
 			}
 		}
 	}

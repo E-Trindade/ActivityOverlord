@@ -5,8 +5,20 @@
 </md-toolbar>
 <md-content layout='row'>
 
-	<article flex=66> </article>
+	<article class='publication-feed' flex=80 md-whiteframe=6>
 
-	<user-list flex=33 />
+		<publication-feed></publication-feed>
+<!--md-fab-bottom-right-->
+		<md-fab-speed-dial md-direction="up" class="md-fling  create-post-button">
+			<md-fab-trigger>
+				<md-button aria-label='New Publication' class='md-fab md-primary'>
+					<md-icon md-font-icon='fa-plus' class='fa'></md-icon>
+				</md-button>
+			</md-fab-trigger>
+		</md-fab-speed-dial>
+	</article>
+
+	<user-list flex=20 />
+
 
 </md-content>
