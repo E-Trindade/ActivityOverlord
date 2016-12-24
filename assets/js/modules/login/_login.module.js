@@ -1,1 +1,1 @@
-angular.module('login-module', ['ngMaterial', 'ui.router'])
+angular.module('login-module', ['ngMaterial', 'ui.router', 'common'])

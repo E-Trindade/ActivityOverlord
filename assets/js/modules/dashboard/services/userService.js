@@ -1,6 +1,6 @@
 angular.module('dashboard-module')
 
-.service('userService', ['Restangular', '$q',
+.service('UserService', ['Restangular', '$q',
 	function (Restangular, $q) {
 		return {
 			listUsers: function(){

@@ -9,11 +9,12 @@ angular.module('signup-module')
 			if ($scope.userForm.$pristine)
 				return;
 			$scope.loading = true;
-			
-			$http.post('/users/create', {
+
+			$http.post('/auth/signup', {
 				fullname: $scope.user.fullname,
 				email: $scope.user.email,
-				password: $scope.user.password
+				password: $scope.user.password,
+				confirmPassword: $scope.user.repeatPassword
 			}).then(function onSuccess() {
 				$state.go('login');
 			})

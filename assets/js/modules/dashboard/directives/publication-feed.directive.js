@@ -1,17 +1,16 @@
 angular.module('dashboard-module')
 
-.directive('publicationFeed', ['publicationService',
-	(publicationService) => {
+.directive('publicationFeed', ['PublicationService',
+	(PublicationService) => {
 		return {
 			restrict: 'E',
 			templateUrl: 'js/modules/dashboard/directives/publication-feed.html',
 			controller: ['$scope',
 				($scope) => {
-					publicationService.getUserFeed().then(
+					PublicationService.getUserFeed().then(
 						function onSuccess(posts) {
-							console.log(posts)
 							$scope.publications = posts;
 						})
-					}]
+				}]
 		}
 }])
