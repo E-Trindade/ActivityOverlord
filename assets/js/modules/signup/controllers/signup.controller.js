@@ -9,7 +9,7 @@ angular.module('signup-module')
 			if ($scope.userForm.$pristine)
 				return;
 			$scope.loading = true;
-			
+
 			$http.post('/users/create', {
 				fullname: $scope.user.fullname,
 				email: $scope.user.email,

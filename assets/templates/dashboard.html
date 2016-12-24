@@ -3,15 +3,15 @@
 		<h1>Dashboard</h1>
 	</div>
 </md-toolbar>
-<md-content layout='row'>
 
+<md-content layout='row'>
 	<article class='publication-feed' flex=80 md-whiteframe=6>
 
 		<publication-feed></publication-feed>
-<!--md-fab-bottom-right-->
+		<!--md-fab-bottom-right-->
 		<md-fab-speed-dial md-direction="up" class="md-fling  create-post-button">
 			<md-fab-trigger>
-				<md-button aria-label='New Publication' class='md-fab md-primary'>
+				<md-button aria-label='New Publication' class='md-fab md-primary' ng-click='newPost($event)'>
 					<md-icon md-font-icon='fa-plus' class='fa'></md-icon>
 				</md-button>
 			</md-fab-trigger>
@@ -19,6 +19,5 @@
 	</article>
 
 	<user-list flex=20 />
-
 
 </md-content>

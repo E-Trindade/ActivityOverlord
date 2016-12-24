@@ -34,9 +34,6 @@ module.exports.routes = {
 
 	'/': { view: 'index' },
 
-//	'GET /signup': { view: 'signup' },
-//	'POST /signup': 'UserController.create'
-
 	/***************************************************************************
 	 *                                                                          *
 	 * Custom routes here...                                                    *
@@ -47,4 +44,7 @@ module.exports.routes = {
 	 *                                                                          *
 	 ***************************************************************************/
 
+	'post /auth/login': 'AuthController.login',
+	'post /auth/signup': 'AuthController.signup'
+	
 };

@@ -1,0 +1,26 @@
+<md-dialog>
+	<md-toolbar>
+		<div class="md-toolbar-tools">
+			<h2>New Post</h2>
+			<span flex></span>
+			<md-button class='' ng-click='cancelDialog()'>
+				Cancel
+			</md-button>
+		</div>
+	</md-toolbar>
+	<md-dialog-content>
+		<md-content layout-gt-sm="row" layout-padding>
+			<div>
+				<md-input-container>
+					<textarea cols="30" rows="10" placeholder="What's in your mind?" ng-model='post.content' ng-change='contentChanged()'>
+					</textarea>
+				</md-input-container>
+			</div>
+		</md-content>
+	</md-dialog-content>
+
+	<md-dialog-actions>
+		<md-button class="md-primary" ng-click='publish()' ng-disabled='!post.isValid'>Publish</md-button>
+	</md-dialog-actions>
+
+</md-dialog>

@@ -7,14 +7,14 @@
 
 module.exports = {
 
+	schema: true,
+
 	attributes: {
 		author: {
 			model: 'user',
 			required: true
 		},
-		title: {
-			type: 'text'
-		},
+
 		content: {
 			type: 'text',
 			required: true
